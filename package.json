@@ -4,7 +4,7 @@
   "description": "A modal react component Made with create-react-library",
   "author": "Kenza Filali",
   "license": "MIT",
-  "repository": "https://github.com/kenza15a/modal-react-lib",
+  "repository": "https://github.com/kenza15a/modal-react-lib", 
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
