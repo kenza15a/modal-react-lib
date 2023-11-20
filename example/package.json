@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start --openssl-legacy-provider",
-    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-dynamic-modal-lib": "^1.1.5",
     "react-modal-lib": "file:..",
     "react-modal-lib-test": "^1.0.1",
     "react-scripts": "file:../node_modules/react-scripts"

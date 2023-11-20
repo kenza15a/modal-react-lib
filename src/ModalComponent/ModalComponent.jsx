@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import React, { Fragment } from 'react'
 import './ModalComponent.css'
+import '../styles/styles.css'
 function ModalComponent({
   isOpen,
   contentComponent,
@@ -8,31 +11,30 @@ function ModalComponent({
   buttonFunction,
   buttonText
 }) {
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
-    <React.Fragment>
-      <div className='modal-overlay' onClick={closeFunction}>
+    <>
+      <div className="modal-overlay" onClick={closeFunction}>
+       
         {/*close the modal when i click outside */}
-        <div className='modal' onClick={(e) => e.stopPropagation()}>
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
+         
           {/*to stop the closing event when i click inside the modal */}
-          <div className='modal-content'>
-            <span className='close' onClick={closeFunction}>
+          <div className="modal-content">
+            <span className="close" onClick={closeFunction}>
               &times;
             </span>
-            <div className='modal-main-content'>
-              {contentComponent}
-              {okButtonState && (
-                <button className='modal-confirmation' onClick={buttonFunction}>
-                  {buttonText}
-                </button>
-              )}
+            <div className="modal-main-content">
+            {contentComponent}
+            {okButtonState && (   <button className="modal-confirmation" onClick={buttonFunction}>{buttonText}</button>)}
             </div>
+         </div>
           </div>
         </div>
-      </div>
-    </React.Fragment>
-  )
+      
+    </>
+  );
 }
 
 export default ModalComponent

@@ -1,34 +1,40 @@
 import React from 'react'
-
-import { ExampleComponent } from 'react-modal-lib'
-import 'react-modal-lib/dist/index.css'
 import ModalComponent from 'react-modal-lib'
-
-
-import React, { useState } from 'react'
-
-
 import 'react-modal-lib/dist/index.css'
-
+import { useState } from 'react'
 
 
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
   const openModal = () => {
     setIsModalOpen(true);
-    console.log("steps form");
-    console.log(isModalOpen);
   };
 
   const closeModal = () => {
-   
-    setIsModalOpen(!isModalOpen);
-    console.log("steps form");
-    console.log(isModalOpen);
+    setIsModalOpen(false);
   };
-  return <ModalComponent isOpen={true} contentComponent={<h1>hi</h1> } closeFunction={closeModal}/>
+
+  return (
+    <>
+      <button className="addEmployees" onClick={openModal}>
+        open modal
+      </button>
+      {
+        isModalOpen && (<ModalComponent
+          isOpen={isModalOpen}
+          contentComponent={
+            <h2>Hi modal lib s</h2>
+          }
+          closeFunction={closeModal}
+        />)
+      }
+
+    </>);
+
+
+
 }
 
 export default App
