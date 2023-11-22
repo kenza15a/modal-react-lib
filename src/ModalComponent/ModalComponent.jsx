@@ -3,15 +3,14 @@
 import React, { Component, Fragment } from 'react'
 import './ModalComponent.css'
 import '../styles/styles.css'
-//import PropTypes from "prop-types";
 /**
  * 
  * @param {Boolean} isOpen 
  * @param {Component}  contentComponent
  * @param {Function} closeFunction 
- * @param {Boolean} okButtonState 
- * @param {Function} buttonFunction 
- * @param {string} buttonText 
+ * @param {Boolean} okButtonState  Facultative
+ * @param {Function} buttonFunction Facultative
+ * @param {string} buttonText Facultative
  *  @return  {React.ReactElement}
  */
 function ModalComponent({
@@ -47,15 +46,5 @@ function ModalComponent({
     </>
   );
 }
-/*
-ModalComponent.propTypes = {
-  isOpen: PropTypes.Boolean.isRequired,
-  contentComponent:PropTypes.object.isRequired,
-  closeFunction:PropTypes.func.isRequired,
-  okButtonState:PropTypes.Boolean,
-  buttonFunction:PropTypes.func,
-  buttonText:PropTypes.string
 
-};
-*/
 export default ModalComponent
