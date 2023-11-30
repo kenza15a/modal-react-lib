@@ -59,3 +59,46 @@ button.modal-confirmation .button {
     color: #4d6c49;
     cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        z-index: 1000;
+        /* Ensure the modal is on top of other content */
+
+
+    }
+
+    .modal-overlay .modal {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        padding: 1rem;
+        top: 10vh;
+        left: 8vw;
+        width: 90%;
+        height: fit-content;
+        max-width: 80vw;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        border-radius: 1rem;
+        z-index: 1001;
+        text-align: center;
+
+
+    }
+
+
+
+}

@@ -1,13 +1,14 @@
 # dynamic-modal-library
 
-> A modal library created with react
+> description : A modal library created with react js that can be imported for use in all react js projects
+the used syntax is jsx  ,the ibrary is react component with many props that are well explained in the example section of this file 
 
 [![NPM](https://img.shields.io/npm/v/react-modal-lib.svg)](https://www.npmjs.com/package/react-modal-lib) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ##prerequisites 
 
 
-Node js ust be installed
+Node js must be installed
 the version used must be above 16 
 
 
